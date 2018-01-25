@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
+import PT from 'prop-types';
 
 class App extends React.Component {
   render() {
@@ -22,7 +22,7 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  children: PropTypes.node
+  children: PT.node
 };
 
 export default App;

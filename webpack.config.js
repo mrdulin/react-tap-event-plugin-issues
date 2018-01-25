@@ -10,9 +10,11 @@ module.exports = {
   entry: {
     app: src,
     vendors: [
+      'core-js/es6/map',
       'react',
       'react-dom',
-      'react-tap-event-plugin'
+      'react-router-dom',
+      'react-tap-event-plugin',
     ]
   },
   output: {
@@ -26,7 +28,8 @@ module.exports = {
         test: /\.js$/,
         include: [
           src,
-          path.resolve(__dirname, 'node_modules/react-tap-event-plugin')
+          path.resolve(__dirname, 'node_modules/react-tap-event-plugin'),
+          // path.resolve(__dirname, 'node_modules/react')
         ],
         loader: 'babel-loader'
       }

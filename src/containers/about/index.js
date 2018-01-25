@@ -6,4 +6,7 @@ const About = () => (
   </div>
 );
 
+const a = new Map([['react', 2015]]);
+a.react;
+
 export default About;
