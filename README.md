@@ -10,6 +10,7 @@
 
 三、react-tap-event-plugin 3.0+版本中`Object.assign`在老旧机型的兼容性问题
 
+详见：https://github.com/mrdulin/blog/issues/54
 
 **用法**：
 
