@@ -28,7 +28,6 @@ module.exports = {
         test: /\.js$/,
         include: [
           src,
-          path.resolve(__dirname, 'node_modules/react-tap-event-plugin'),
           // path.resolve(__dirname, 'node_modules/react')
         ],
         loader: 'babel-loader'
