@@ -28,6 +28,11 @@ module.exports = {
         test: /\.js$/,
         include: [
           src,
+
+          // 编译转换Object.assign
+          // path.resolve(__dirname, 'node_modules/react-tap-event-plugin')
+
+          // 编译转换Map
           // path.resolve(__dirname, 'node_modules/react')
         ],
         loader: 'babel-loader'
