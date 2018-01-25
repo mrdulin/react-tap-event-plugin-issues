@@ -1,0 +1,42 @@
+{
+  "name": "react-tap-event-plugin-issues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack",
+    "serve": "http-server ./dist -p 3000 -g -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrdulin/react-tap-event-plugin-issues.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrdulin/react-tap-event-plugin-issues/issues"
+  },
+  "homepage": "https://github.com/mrdulin/react-tap-event-plugin-issues#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "eslint": "^4.16.0",
+    "eslint-plugin-react": "^7.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "http-server": "^0.11.1",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-tap-event-plugin": "^3.0.2"
+  }
+}
