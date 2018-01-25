@@ -5,12 +5,14 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const src = path.resolve(__dirname, 'src');
 const dist = path.resolve(__dirname, 'dist');
+const port = 3000;
 
 module.exports = {
   entry: {
     app: src,
     vendors: [
-      'core-js/es6/map',
+      'core-js/fn/object/assign',
+      'core-js/fn/map',
       'react',
       'react-dom',
       'react-router-dom',
@@ -34,6 +36,7 @@ module.exports = {
 
           // 编译转换Map
           // path.resolve(__dirname, 'node_modules/react')
+
         ],
         loader: 'babel-loader'
       }
@@ -47,5 +50,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: src + '/index.html'
     })
-  ]
+  ],
+  devServer: {
+    port,
+    host: "0.0.0.0"
+  }
 }
